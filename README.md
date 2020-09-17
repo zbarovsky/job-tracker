@@ -19,7 +19,38 @@
 
 ### Layout
 - landing page: login? -> if logged in then land to list of applied for jobs
-- page for jobs -- edit jobs
+- page for jobs (cards?) -- edit jobs
 - page to add new job to list
 - page to see overal analytics
 
+## TODO:
+
+### Frontend
+
+- [ ] landing page component
+    - [ ] sign in/sign up
+- [ ] view job page
+    - [ ] ability to add job
+        - [ ] title
+        - [ ] company
+        - [ ] date applied
+        - [ ] status
+        - [ ] link
+        - [ ] connections
+    - [ ] ability to edit job
+- [ ] view analytics page
+    - [ ] total amount of jobs applied for
+    - [ ] amount of next steps (i.e. emails, rejections, etc.)
+
+### Backend:
+
+- [ ] user auth
+    - [ ] email
+    - [ ] password
+- [ ] track jobs
+    - [ ] title
+    - [ ] company
+    - [ ] date
+    - [ ] status
+    - [ ] link
+    - [ ] connections
