@@ -10,7 +10,7 @@ interface JobTrackerProps {
 const JobTracker: React.FC<JobTrackerProps> = () => {
     return (
         <div>
-
+            <JobForm />
         </div>
     )
 }

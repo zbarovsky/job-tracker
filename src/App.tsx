@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import JobTracker from './Components/JobTracker/JobTracker';
 import {Route} from 'react-router-dom'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
