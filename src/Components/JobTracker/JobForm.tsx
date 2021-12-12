@@ -32,26 +32,28 @@ const JobForm: React.FC<JobFormProps> = () => {
 
     return (
         <div>
-            <form>
-                <input type='text' placeholder='Job Title'/>
-                <input  type='text' placeholder='Link to Job App'/>
-                <input type='text' placeholder='Company'/>
-                <label> Contact Information:
-                    <input type='text' placeholder='Contact Name'/>
-                    <input type='email' placeholder='Email'/>
-                    <input type='text' placeholder='Phone Number'/>
-                </label>
-                <select placeholder='Status'>
-                    <option>Applied</option>
-                    <option>Reached Out</option>
-                    <option>Phone Screen</option>
-                    <option>Interview</option>
-                    <option>Rejected</option>
-                    <option>Accepted</option>
-                </select>
-                <input type='date' placeholder='date'/> 
-                <button>Add</button>
-            </form>
+            <div>
+                <form>
+                    <input type='text' placeholder='Job Title'/>
+                    <input  type='text' placeholder='Link to Job App'/>
+                    <input type='text' placeholder='Company'/>
+                    <label> Contact Information:
+                        <input type='text' placeholder='Contact Name'/>
+                        <input type='email' placeholder='Email'/>
+                        <input type='text' placeholder='Phone Number'/>
+                    </label>
+                    <select placeholder='Status'>
+                        <option>Applied</option>
+                        <option>Reached Out</option>
+                        <option>Phone Screen</option>
+                        <option>Interview</option>
+                        <option>Rejected</option>
+                        <option>Accepted</option>
+                    </select>
+                    <input type='date' placeholder='date'/> 
+                    <button>Add</button>
+                </form>
+            </div>
         </div>
     )
 }
