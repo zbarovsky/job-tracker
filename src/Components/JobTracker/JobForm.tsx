@@ -32,17 +32,21 @@ const JobForm: React.FC<JobFormProps> = () => {
 
     return (
         <div>
-            <div>
-                <form>
-                    <input type='text' placeholder='Job Title'/>
-                    <input  type='text' placeholder='Link to Job App'/>
-                    <input type='text' placeholder='Company'/>
-                    <label> Contact Information:
-                        <input type='text' placeholder='Contact Name'/>
-                        <input type='email' placeholder='Email'/>
-                        <input type='text' placeholder='Phone Number'/>
-                    </label>
-                    <select placeholder='Status'>
+            <div className='job-form-div'>
+                <form className='job-form'>
+                    <label className='visuallyHidden'>Job Title</label>
+                    <input className='job-form-input1' type='text' placeholder='Job Title'/>
+                    <label className='visuallyHidden'>Link to Job App</label>
+                    <input className='job-form-input1'  type='text' placeholder='Link to Job App'/>
+                    <label className='visuallyHidden'>Company Name</label>
+                    <input className='job-form-input1' type='text' placeholder='Company'/>
+                    <label className='job-form-contact-label visuallyHidden'> Contact Information: </label> 
+                        <input className='job-form-input-contact' type='text' placeholder='Contact Name'/>
+                        <input className='job-form-input-contact' type='email' placeholder='Email'/>
+                        <input className='job-form-input-contact' type='text' placeholder='Phone Number'/>
+                    <label className='visuallyHidden'>Status of Application</label>
+                    <select className='job-form-status' placeholder='Status'>
+                        <option>Status</option>
                         <option>Applied</option>
                         <option>Reached Out</option>
                         <option>Phone Screen</option>
@@ -50,8 +54,9 @@ const JobForm: React.FC<JobFormProps> = () => {
                         <option>Rejected</option>
                         <option>Accepted</option>
                     </select>
-                    <input type='date' placeholder='date'/> 
-                    <button>Add</button>
+                    <label className='job-form-date-label'>Date Applied: </label>
+                    <input className='job-form-date' type='date' placeholder='date'/> 
+                    <button className='job-form-button-grid'>Add</button>
                 </form>
             </div>
         </div>
